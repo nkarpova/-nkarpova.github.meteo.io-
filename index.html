@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meteo</title>
+  </head>
+  <body>
+<header>
+<div class="slider">
+ <h1>Meteo World</h1>
+ <h2>Explore the world from home!</h2>
+</div>
+</header>
+<main>
+<div class="container">
+  <div class="current-info">
+    <div class="info-block">
+      <h3>City:&nbsp</h3>
+      <p class= "title" id = "city-name"></p>
+    </div>
+   <div class="info-block">
+     <h3>Country:&nbsp</h3>
+     <p class= "sub-title" id = "country"></p>
+   </div>
+   <div class="info-block">
+     <h3>Temperature:&nbsp</h3>
+     <p class= "sub-title" id = "temp"></p>
+   </div>
+   <div class="info-block">
+     <h3>Date:&nbsp</h3>
+     <p class= "info" id = "date"></p>
+   </div>
+   <div class="info-block">
+     <h3>Time:&nbsp</h3>
+     <p class= "info" id = "time"></p>
+   </div>
+  </div>
+  <div class="img-block">
+    <img class="weather-img" src="img/weather(1).svg" alt="weather img">
+  </div>
+</div>
+<div class="description">
+   <h3>Description:</h3>
+</div>
+ <div class="row">
+   <div id="weather-icon">
+      <h3>Weather</h3>
+      <p id= icon></p>
+   </div>
+  <div id="col1">
+     <h3>Max/Min</h3>
+      <br>
+     <p id="temp-max"></p>
+     <p id="temp-min"></p>
+  </div>
+
+  <div id = "col3">
+   <h3>State:</h3>
+    <br>
+   <p class= "info" id = "state"></p>
+  </div>
+  <div id="wind">
+   <h3>Wind(m/s)</h3>
+    <br>
+   <p class="info" id="speed"></p>
+  </div>
+  <div id="col4">
+   <h3>Humidity</h3>
+    <br>
+   <p id="humidity"></p>
+  </div>
+</div>
+<br>
+<div class="last-part">
+ <div class="img-search">
+  <img class="search-img" src="img/search.svg" alt="img search">
+ </div>
+ <div class="search-bar">
+ 	 <form id="request" method="POST">
+ 		<input type="text" id="inputCity" autocomplete="city" class="search-box" id="request"
+     placeholder="Write the city here" title="Write here.">
+   </form>
+    <button type="submit" class="button">Search</button>
+ </div>
+</div>
+</main>
+
+
+<footer>
+  <p>Powered by Natalia Karpova</p>
+</footer>
+
+
+   <script src="dist/main.bundle.js"></script>
+
+  </body>
+</html>
